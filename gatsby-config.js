@@ -1,13 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Gatsby template',
+    author: 'Qbson'
+  },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -15,6 +14,14 @@ module.exports = {
           families: ['text-regular']
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/markdowns/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
   ],
 }
