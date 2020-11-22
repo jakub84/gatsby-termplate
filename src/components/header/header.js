@@ -1,10 +1,11 @@
 import React from 'react'
 import Navigation from "../header/navigation/navigation"
+import headerStyles from "./header.module.scss"
 
 const Header = () => {
     return (
         <header>
-            <h1>This is title of page</h1>
+            <h1 className={headerStyles.title}>This is title of page</h1>
             <Navigation />
         </header>
     )
