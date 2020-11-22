@@ -1,7 +1,16 @@
 @import '../../globalStyles/variables.scss';
 
+.mainHeader {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    margin: 60px 0;
+    justify-content: space-between;
+}
+
 .title {
-    font-size: 20px;
+    font-size: 40px;
     color: $accent-color;
-    font-family: $main-regular;
+    font-family: $main-bold;
+    display: inline-block;
 }

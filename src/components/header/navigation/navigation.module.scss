@@ -1,0 +1,28 @@
+@import '../../../globalStyles/variables.scss';
+
+.mainNavigation {
+    font-family: $main-regular;
+
+    ul {
+
+        display: flex;
+
+        li {
+            margin: 10px;
+            a {
+                font-family: $main-regular;
+                text-decoration: none;
+                color: $text-color;
+                padding: 13px;
+                &:hover {
+                    color: $accent-color;
+                }
+                &.active {
+                    border-radius: 20px;
+                    background-color: $accent-color;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+}
