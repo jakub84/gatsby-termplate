@@ -1,0 +1,19 @@
+@import '../../globalStyles/variables.scss';
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-color;
+    z-index: 9;
+    span {
+        color: $light-color;
+        font-family: $main-bold;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
