@@ -6,7 +6,7 @@ import Footer from "../footer/footer"
 import Loader from "../loader/loader"
 
 const Layout = ({ children }) => {
-  const showLoader = false
+  const showLoader = true
     
   return (
     <div className={layoutStyles.siteContainer}>

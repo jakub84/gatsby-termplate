@@ -10,6 +10,10 @@
     align-items: center;
     background-color: $accent-color;
     z-index: 9;
+    transition: all 0.3s;
+    &.red {
+        background-color: red;   
+    }
     span {
         color: $light-color;
         font-family: $main-bold;
