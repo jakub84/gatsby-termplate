@@ -22,7 +22,12 @@ const Home = () => {
     <Layout>
       <ul>
         {data.allMarkdownRemark.edges.map(edge => {
-          return <li>{edge.node.frontmatter.title}</li>
+          return (
+            <li>
+              <h2>{edge.node.frontmatter.title}</h2>
+              <p>{edge.node.frontmatter.author}</p>
+            </li>
+          )
         })}
       </ul>
     </Layout>
