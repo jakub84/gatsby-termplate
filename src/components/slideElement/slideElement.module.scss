@@ -1,0 +1,10 @@
+@import '../../globalStyles/variables.scss';
+
+.container {
+    border: 1px solid $borders;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px;
+    width: calc(100% / 4);
+    max-width: 240px;
+}
